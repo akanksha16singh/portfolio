@@ -23,7 +23,7 @@ export default function Process() {
     {
       icon: Rocket,
       title: 'Implement',
-      description: 'Launching and delivering the learning \n solution',
+      description: 'Launching and delivering the learning solution',
       color: 'from-coral-500 to-purple-500',
     },
     {
@@ -63,16 +63,16 @@ export default function Process() {
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
             {steps.map((step, index) => (
-              <div key={index} className="fade-in-section" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="relative group">
-                  <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div className={`w-16 h-16 bg-gradient-to-br ${step.color} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
+              <div key={index} className="fade-in-section flex" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="relative group flex-1 flex flex-col">
+                  <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col h-full">
+                    <div className={`w-16 h-16 bg-gradient-to-br ${step.color} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform flex-shrink-0`}>
                       <step.icon className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-slate-800 mb-2 text-center">
+                    <h3 className="text-xl font-bold text-slate-800 mb-2 text-center flex-shrink-0">
                       {step.title}
                     </h3>
-                    <p className="text-slate-600 text-sm text-center leading-relaxed">
+                    <p className="text-slate-600 text-sm text-center leading-relaxed flex-grow flex items-center justify-center whitespace-pre-line">
                       {step.description}
                     </p>
                   </div>
