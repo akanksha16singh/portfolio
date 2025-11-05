@@ -19,15 +19,20 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-coral-50 via-sage-50 to-purple-50 opacity-60"></div>
-
-      <div className="absolute top-20 left-10 animate-float">
-        <Sparkles className="w-8 h-8 text-coral-400 opacity-40" />
-      </div>
-     <div className="absolute top-40 right-5 md:right-20 animate-float-delayed">
-        <BookOpen className="w-10 h-10 text-sage-500 opacity-40" />
-      </div>
-      <div className="absolute bottom-40 left-20 animate-float-slow">
-        <Puzzle className="w-12 h-12 text-purple-400 opacity-40" />
+      
+      {/* Decorative icons container */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 left-10 animate-float">
+          <Sparkles className="w-8 h-8 text-coral-400 opacity-40" />
+        </div>
+        
+        <div className="absolute top-20 right-10 md:top-40 md:right-20 animate-float-delayed">
+          <BookOpen className="w-10 h-10 text-sage-500 opacity-40" />
+        </div>
+        
+        <div className="absolute bottom-40 left-20 animate-float-slow">
+          <Puzzle className="w-12 h-12 text-purple-400 opacity-40" />
+        </div>
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -41,11 +46,11 @@ export default function Hero() {
               Hello, I'm
             </span>
           </div>
-
+          
           <h1 className="text-5xl md:text-7xl font-bold text-slate-800 mb-6 animate-slide-up">
             Akanksha Singh
           </h1>
-
+          
           <div className="text-2xl md:text-3xl text-slate-600 mb-8 font-light">
             <span className="inline-block animate-fade-in-delayed">Crafting Learning Experiences</span>
             <br />
@@ -53,12 +58,12 @@ export default function Hero() {
               That Stick
             </span>
           </div>
-
+          
           <p className="text-lg text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed">
             Instructional Designer & Learning Experience Designer passionate about creating
             engaging, effective, and memorable learning journeys.
           </p>
-
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <button
               onClick={scrollToPortfolio}
@@ -74,13 +79,13 @@ export default function Hero() {
               Let's Connect
             </button>
           </div>
-
+          
           <div className="animate-bounce mt-12">
             <ArrowDown className="w-6 h-6 text-slate-400 mx-auto" />
           </div>
         </div>
       </div>
-
+      
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white pointer-events-none"></div>
     </section>
   );
