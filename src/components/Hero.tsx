@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="absolute top-20 left-10 animate-float">
         <Sparkles className="w-8 h-8 text-coral-400 opacity-40" />
       </div>
-      <div className="absolute top-40 right-20 animate-float-delayed">
+     <div className="absolute top-40 right-5 md:right-20 animate-float-delayed">
         <BookOpen className="w-10 h-10 text-sage-500 opacity-40" />
       </div>
       <div className="absolute bottom-40 left-20 animate-float-slow">
